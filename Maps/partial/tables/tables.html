@@ -1,0 +1,11 @@
+﻿
+<div ng-click="getAreas()">get</div>
+
+<table>
+    <tr ng-repeat="area in areas">
+        <td>{{area.title}}</td>
+        <!--<td>{{area.population}}</td>-->
+        <td>{{area.surface}}</td>
+    </tr>
+</table>
+<div area-chart-directive></div>

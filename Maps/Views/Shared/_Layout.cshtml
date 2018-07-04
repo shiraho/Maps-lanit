@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angular-ui-router.js"></script>
+    <script type="text/javascript" src="~/Scripts/angular-animate.js"></script>
+    <script type="text/javascript" src="~/Scripts/angular-aria.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angular-material.min.js"></script>
+    @*<script type="text/javascript" src="~/Scripts/Chart.min.js"></script>*@
+    @*<script type="text/javascript" src="~/Scripts/angular-chart.min.js"></script>*@
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+
+
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/angular-material.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/area-chart-directive.css" rel="stylesheet" type="text/css" />
+
+
+
+    @*<script type="text/javascript" src="~/Scripts/App/common/app-run.js"></script>*@
+
+    <script type="text/javascript" src="~/Scripts/App/common/app-config.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+@*<body class="md-default-theme">
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>*@
+<body>
+    @RenderBody()
+    @*@RenderSection("scripts", required: false)*@
+    <!-- Menu goes here -->
+
+    <script type="text/javascript" src="~/Scripts/App/common/app-config.js"></script>
+
+
+    <!-- Application files -->
+
+    <script type="text/javascript" src="~/Scripts/App/common/main-controller.js"></script>
+    <script type="text/javascript" src="~/Scripts/App/maps/maps-controller.js"></script>
+    <script type="text/javascript" src="~/Scripts/App/tables/tables-controller.js"></script>
+    @*<script type="text/javascript" src="~/Scripts/App/common/services/area-chart-factory.js"></script>*@
+
+    <script type="text/javascript" src="~/Scripts/App/common/api/area-api-service.js"></script>
+    <script type="text/javascript" src="~/Scripts/App/charts/area-chart-directive.js"></script>
+
+
+
+
+</body>
+</html>

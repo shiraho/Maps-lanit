@@ -1,0 +1,12 @@
+﻿<md-toolbar layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <div flex class="logo">
+        LOGO
+    </div>
+    <div flex class="title" layout="row">
+
+        <div class="title-menu-item" ng-click="goToState('main.tables')" ng-class="{'item-selected':currentState=='main.tables'}">TABLES</div>
+        <div class="title-menu-item" ng-click="goToState('main.maps')" ng-class="{'item-selected':currentState=='main.maps'}">MAPS</div>
+    </div>
+    </md-toolbar>
+<ui-view>
+</ui-view>

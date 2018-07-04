@@ -1,0 +1,27 @@
+﻿
+.area-chart-directive-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.area-chart-directive-sector {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform-origin: left bottom;
+}
+.area-chart-directive-container:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+}
