@@ -1,0 +1,29 @@
+﻿
+.nationalities-chart-directive-container {
+    width: 80px;
+    height: 300px;
+    overflow: hidden;
+    /*border-radius: 50%;*/
+    position: relative;
+}
+
+.nationalities-chart-directive-element {
+    width: 100%;
+    /*display: block;*/
+    /*height: 50%;*/
+    position: absolute;
+    /*left: 50%;
+    top: 0;
+    transform-origin: left bottom;*/
+}
+
+.nationalities-chart-directive-container:after {
+    /*content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;*/
+}

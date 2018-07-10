@@ -1,19 +1,16 @@
 ﻿(function () {
-    'use strict';
+    'use strict'
+    var app = angular.module('Maps');
+    app.service('NationalitiesApiService', ['$http', '$location',
 
-    angular
-        .module('app')
-        .factory('nationality_api_servise', nationality_api_servise);
+        function ($http, $location) {
+            var urlController = 'http://' + $location.host() + ':' + $location.port() + '/api/';
 
-    nationality_api_servise.$inject = ['$http'];
+            this.getNationalities = function () {
+                var urlRequest = urlController + 'Nationalities'
+                return $http.get(urlRequest);
+            };
 
-    function nationality_api_servise($http) {
-        var service = {
-            getData: getData
-        };
 
-        return service;
-
-        function getData() { }
-    }
+        }]);
 })();

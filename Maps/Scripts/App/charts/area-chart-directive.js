@@ -23,8 +23,8 @@
             controller: ['$scope', function ($scope) {
                 //$scope.getAreas = AreaApiService.getAreas();
                 $scope.colorsArray = [
-                    '#607D8B',
                     '#673AB7',
+                    '#607D8B',
                     '#FF5722',
                     '#4CAF50',
                     '#FFEB3B',
@@ -56,7 +56,8 @@
                         }
                         $scope.areas = areas;
                         console.log($scope.areas)
-                    
+                        $scope.areaDirectiveInHtml = '<div class="area-chart-directive-container">';
+
                     
 
                 var maxValue = 25;
@@ -77,6 +78,10 @@
                         'transform': 'rotate(' + rotateDeg + 'deg) skewY(' + skewDeg + 'deg)'
                     });
                     container.append(sector);
+                    $scope.areaDirectiveInHtml = $scope.areaDirectiveInHtml.concat(sector[0].outerHTML);
+                    if (data.id == ($scope.areas.length -1)) {
+                        $scope.areaDirectiveInHtml = $scope.areaDirectiveInHtml.concat('</div>');
+                    }
 
                     return startAngle + sectorDeg;
                 };

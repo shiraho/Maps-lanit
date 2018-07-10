@@ -1,5 +1,4 @@
 ﻿
-<div ng-click="getAreas()">get</div>
 
 <table>
     <tr ng-repeat="area in areas">
@@ -9,3 +8,13 @@
     </tr>
 </table>
 <div area-chart-directive></div>
+
+
+<table>
+    <tr ng-repeat="nationality in nationalities">
+        <td>{{nationality.title}}</td>
+        <!--<td>{{nationality.population}}</td>-->
+        <td>{{nationality.percent}}</td>
+    </tr>
+</table>
+<div nationalities-chart-directive></div>
