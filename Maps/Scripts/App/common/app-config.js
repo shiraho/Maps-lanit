@@ -1,8 +1,9 @@
-﻿angular.module('Maps', ['ui.router'])
+﻿angular.module('Maps', ['ui.router', 'ngMaterial'])
     .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
 
         // default route
-        $urlRouterProvider.otherwise('/');
+
+        $urlRouterProvider.otherwise('/tables');
         console.log('config')
         $stateProvider
             .state('main', {

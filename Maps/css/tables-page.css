@@ -1,0 +1,30 @@
+﻿/*.md-list-style {
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #546E7A;
+    border-radius: 5px;
+   
+}*/
+.md-list-style {
+min-width: 380px;
+}
+.md-list-item-style {
+
+}
+    .md-list-item-style .element-title {
+        width: 280px;
+    }
+    .md-list-item-style .int {
+        width: 60px;
+    }
+    .md-list-item-style .exampe-color {
+        width: 40px;
+        padding-left: 10px;
+    }
+        .md-list-item-style .exampe-color .table-example-of-color {
+            height: 20px;
+            width: 20px;
+        }
+
+

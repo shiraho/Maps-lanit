@@ -1,0 +1,16 @@
+﻿.content {
+    max-width: 900px;
+}
+.content-item{
+    margin-top: 40px;
+    padding: 20px;
+}
+.none-padding{
+    padding: 0px;
+}
+
+.title-menu-item.item-selected {
+    border: none;
+    border-bottom: 3px solid #8bc34a;
+    background-color: #546E7A;
+}

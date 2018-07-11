@@ -57,9 +57,7 @@
                         var container = $('.nationalities-chart-directive-container');
 
                         var addElement = function (data, startHeight) {
-                            //var sectorDeg = 3.6 * data.percent;
-                            //var skewDeg = 90 + sectorDeg;
-                            //var bottomMargin = startHeight;
+
 
                             var element = $('<div>', {
                                 'class': 'nationalities-chart-directive-element'
@@ -74,7 +72,6 @@
                                     //массив элементов в реверсе, => элемент с индексом 1 - последний
                                     $scope.nationalitiesDirectiveInHtml = $scope.nationalitiesDirectiveInHtml.concat('</div>');
                                 }
-                            console.log($scope.nationalitiesDirectiveInHtml)
                             return startHeight + data.percent;
                         };
                         //prev - высота curr - элемент

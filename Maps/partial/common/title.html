@@ -1,12 +1,15 @@
-﻿<md-toolbar layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-    <div flex class="logo">
+﻿<div flex layout="row" class="title" md-whiteframe="10">
+    <div flex class="maps-logo">
         LOGO
     </div>
-    <div flex class="title" layout="row">
+    <div flex layout="row">
 
-        <div class="title-menu-item" ng-click="goToState('main.tables')" ng-class="{'item-selected':currentState=='main.tables'}">TABLES</div>
-        <div class="title-menu-item" ng-click="goToState('main.maps')" ng-class="{'item-selected':currentState=='main.maps'}">MAPS</div>
+        <div flex class="title-menu-item" ng-click="goToState('main.tables')" ng-class="{'item-selected':currentState=='main.tables'}">TABLES</div>
+        <div flex class="title-menu-item" ng-click="goToState('main.maps')" ng-class="{'item-selected':currentState=='main.maps'}">MAPS</div>
     </div>
-    </md-toolbar>
-<ui-view>
-</ui-view>
+    <div flex></div>
+    </div>
+<div layout="row" layout-align="center">
+    <ui-view flex class="content">
+    </ui-view>
+</div>

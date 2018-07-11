@@ -1,20 +1,51 @@
 ﻿
+<div layout="column" layout-align="center">
+    <div flex layout="row" class="content-item" md-whiteframe="4">
+        <md-list flex class="md-list-style">
+            <md-list-item class="md-list-item-style">
+                <div class="element-title">Округ</div>
+                <div class="int">Площадь [кв. км]</div>
+                <div class="exampe-color">
 
-<table>
-    <tr ng-repeat="area in areas">
-        <td>{{area.title}}</td>
-        <!--<td>{{area.population}}</td>-->
-        <td>{{area.surface}}</td>
-    </tr>
-</table>
-<div area-chart-directive></div>
+                </div>
+            </md-list-item>
+            <md-list-item class="md-list-item-style" ng-repeat="area in areas">
+                <div class="element-title">{{area.title}}</div>
+                <!--<td>{{area.population}}</td>-->
+                <div class="int">{{area.surface}}</div>
+                <div class="exampe-color">
+                    <div class="table-example-of-color" style="background-color:{{area.color}}"></div>
+                </div>
+            </md-list-item>
+        </md-list>
+        <div flex layout="row" layout-align="start center">
+            <div flex area-chart-directive></div>
+            <div flex></div>
+        </div>
 
+    </div>
+    <div flex layout="row" class="content-item" md-whiteframe="4">
+        <md-list flex class="md-list-style">
+            <md-list-item class="md-list-item-style">
+                <div class="element-title">Национальность</div>
+                <div class="int">Население [ % ]</div>
+                <div class="exampe-color">
 
-<table>
-    <tr ng-repeat="nationality in nationalities">
-        <td>{{nationality.title}}</td>
-        <!--<td>{{nationality.population}}</td>-->
-        <td>{{nationality.percent}}</td>
-    </tr>
-</table>
-<div nationalities-chart-directive></div>
+                </div>
+            </md-list-item>
+            <md-list-item class="md-list-item-style" ng-repeat="nationality in nationalities">
+                <div class="element-title">{{nationality.title}}</div>
+                <div class="int">{{nationality.percent}}</div>
+                <div class="exampe-color">
+                    <div class="table-example-of-color" style="background-color:{{nationality.color}}"></div>
+                </div>
+            </md-list-item>
+        </md-list>
+        <div flex layout="row" layout-align="start center">
+            <div flex nationalities-chart-directive></div>
+            <div flex></div>
+        </div>
+
+    </div>
+
+</div>

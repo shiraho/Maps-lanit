@@ -1,5 +1,6 @@
 ﻿
 .area-chart-directive-container {
+    padding: 10px;
     width: 300px;
     height: 300px;
     overflow: hidden;

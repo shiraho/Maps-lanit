@@ -6,7 +6,9 @@
             console.log('asdasdasd');
             $scope.hello = "asdasd";
             console.log($scope.hello);
+            $scope.currentState = $state.current.name;
             $scope.goToState = function (state) {
+                $scope.currentState = state;
                 $state.go(state);
                 $scope.currentState = state;
             }

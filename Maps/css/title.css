@@ -1,0 +1,28 @@
+﻿.title {
+    background-color: #607D8B;
+
+}
+.maps-logo {
+    margin-left: 28px;
+    margin-top: 18px;
+    font-size: 26px;
+    color: #B0BEC5;
+    line-height: 30px;
+    max-width: 130px;
+}
+.title-menu-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 63px;
+    color: white;
+    padding-top: 21px;
+    white-space: nowrap;
+    font-size: 16px;
+    max-width: 130px;
+}
+.test-box{
+    height: 100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    margin: 30px;
+}
